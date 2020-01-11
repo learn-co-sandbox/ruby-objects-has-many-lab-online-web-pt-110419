@@ -1,7 +1,7 @@
 class Author
 
-  attr_accessor :name
-  attr_writer :posts
+  attr_accessor :name, :posts
+  # attr_writer :posts
 
   @@post_count = 0
   
@@ -31,9 +31,9 @@ class Author
    # def self.all 
    #  @@all 
    # end 
-  def posts
-    Author.all.select do |post|
-      post.artist == self 
-    end 
-  end 
+  # def posts
+  #   Author.all.select do |post|
+  #     post.artist == self 
+  #   end 
+  # end 
 end
