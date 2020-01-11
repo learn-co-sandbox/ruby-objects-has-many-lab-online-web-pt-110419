@@ -30,9 +30,9 @@ class Author
    # def self.all 
    #  @@all 
    # end 
-  # def posts
-  #   Author.all.select do |post|
-  #     post.artist == self 
-  #   end 
+   def posts
+     self.all.select do |post|
+       post.artist == self 
+     end 
   # end 
 end
