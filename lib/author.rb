@@ -1,6 +1,6 @@
 class Author
 
-  attr_accessor :name, :posts
+  attr_accessor :name
 
   @@post_count = 0
   
@@ -30,5 +30,5 @@ class Author
    # def self.all 
    #  @@all 
    # end 
-  
+  def posts
 end
