@@ -31,4 +31,8 @@ class Author
    #  @@all 
    # end 
   def posts
+    Author.all.select do |post|
+      port.artist == self 
+    end 
+  end 
 end
