@@ -32,7 +32,7 @@ class Author
    # end 
   def posts
     Author.all.select do |post|
-      port.artist == self 
+      post.artist == self 
     end 
   end 
 end
