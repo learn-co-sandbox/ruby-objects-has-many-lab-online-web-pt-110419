@@ -34,5 +34,5 @@ class Author
      self.all.select do |post|
        post.artist == self 
      end 
-  # end 
+   end 
 end
