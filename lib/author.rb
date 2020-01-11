@@ -8,7 +8,7 @@ class Author
   def initialize(name)
     @name = name
     @posts = []
-    self.all << posts
+    # self.all << posts
     
   end
 
