@@ -34,8 +34,8 @@ class Author
    #  @@all 
    # end 
   def posts
-    Author.all.select do |post|
-      post.artist == self 
+   Post.all.select do |post|
+      post.author == self 
     end 
    
   end 
