@@ -18,7 +18,8 @@ class Post
   end
   
   def author
-    @author
+    Author.all.select do |post|
+      
   end 
   
   def author=(author)
