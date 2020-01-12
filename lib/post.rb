@@ -25,7 +25,7 @@ class Post
   def author=(author)
     @author = author
     self.all.select do |post|
-      post.artist == self
+      post.author == self
     end
   end
   
