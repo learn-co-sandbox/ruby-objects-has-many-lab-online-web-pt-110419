@@ -18,14 +18,15 @@ class Post
   end
   
   def author
-    self.all.select do |post|
-      post.artist == self
-    end
+    
     @author 
   end 
   
   def author=(author)
     @author = author
+    self.all.select do |post|
+      post.artist == self
+    end
   end
   
   def self.all 
